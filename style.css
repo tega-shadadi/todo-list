@@ -1,0 +1,164 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Poppins", sans-serif;
+  box-sizing: border-box;
+}
+
+body{
+  /*background-color:#78c1f3;*/
+  background-color:#e9acda;
+  font-family: "poppins",sans-serif;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.todo-head {
+ display: flex;
+ justify-content: center;
+ margin: 30px;
+
+}
+
+.head-icon {
+margin-left: 20px;
+height: 40px;
+}
+
+.fire-icon{
+  height: 40px;
+  width: 40px;
+  margin-left: 0px;
+}
+
+
+
+.container{
+ 
+  background-color: white;
+  padding: 4%;
+  border-radius: 10px;
+  width: 500px;
+  margin: 10px;
+
+}
+.todo-input{
+  border-radius: 40px;
+  padding: 0;
+  background-color:#dad8d8;
+  display: flex;
+  align-items: center;
+  height: 60px;
+  padding-left: 2%;
+
+}
+
+.todo-input-field{
+  background-color: transparent;
+  
+  border: none;
+  outline: none;
+  font-size:large;
+  width:100%;
+  padding: 0 15px; /* Add horizontal padding for spacing */
+  height: 100%; /* Match the height of the parent */
+  box-sizing: border-box; /* Ensure padding doesn't affect width/height */
+}
+ 
+
+.input-plus-icon{
+  cursor: pointer;
+  height: 100%;
+  width: 60px;
+  border-radius:40px; /* Round only the right corners */
+  box-sizing: border-box; /* Ensure proper sizing */
+  background-color: limegreen;
+  height: 100%;
+}
+h4{
+  /*text-decoration: line-through;*/
+  text-align: center;
+  color: limegreen;
+  /*display: none;*/
+}
+
+.delete-disappear{
+  color: rgb(240, 77, 77);
+  display: none;
+}
+
+.delete-appear-js{
+  display: block;
+}
+
+.trash-js{
+  cursor: pointer;
+  height: 100% ;
+  width: 60px;
+  border-radius:40px; /* Round only the right corners */
+  box-sizing: border-box; /* Ensure proper sizing */
+  height: 100%;
+  
+  
+}
+
+.trash-js img {
+  height: 24px; /* Adjust the size of the trash icon */
+  width: 24px;
+  
+}
+
+.trash-icon {
+  stroke: red; /* Set the outline color to red */
+  stroke-width: 2; /* Adjust the thickness of the outline */
+}
+
+.disappear{
+  display: none;
+
+}
+
+.appear-js{
+  display: block;
+}
+
+.crossed{
+  text-decoration: line-through;
+}
+
+.ul li{
+  list-style:none;
+  font-size:18px;
+  cursor: pointer;
+  padding: 10px;
+
+}
+
+.list-item{
+  
+  border-radius: 20px;
+  padding: 0;
+  background-color:#dad8d8;
+  display: flex;
+  align-items: center;
+  justify-content:space-between;
+  padding: 0 15px;
+  height: 60px;
+  padding-left: 2%;
+  margin: 10px;
+  box-sizing: border-box;
+}
+
+.list-item .todo-text-js {
+  flex: 1; /* Allow the text to take up available space */
+  word-wrap: break-word; /* Ensure long text wraps to the next line */
+}
+
+.list-item img {
+  height: 24px; /* Set a consistent height for the icons */
+  width: 24px; /* Set a consistent width for the icons */
+  cursor: pointer; /* Add a pointer cursor for interactivity */
+  margin-left: 10px; /* Add spacing between icons */
+}
